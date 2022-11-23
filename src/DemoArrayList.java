@@ -17,7 +17,6 @@ public class DemoArrayList {
         System.out.println("numeros.size = " + numeros.size());
         System.out.println("----------------------------------------");
 
-
         //Recorrer ArrayList con for
         /*for(int i = 0; i < numeros.size(); i++){
             System.out.println("numeros[" + i + "] = " + numeros.get(i));
