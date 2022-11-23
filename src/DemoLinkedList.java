@@ -26,8 +26,20 @@ public class DemoLinkedList {
         Collections.sort(numeros);
         recorrer(numeros);
 
+        //Eliminar
+        numeros.remove(3);
+        recorrer(numeros);
 
+        numeros.removeFirst();
+        numeros.removeLast();
+        recorrer(numeros);
 
+        //Buscar
+        System.out.println("numeros.indexOf(5) = " + numeros.indexOf(5));
+        System.out.println("numeros.indexOf(80) = " + numeros.indexOf(80));
+        System.out.println("numeros.indexOf(5) = " + numeros.indexOf(5));
+        System.out.println("numeros.contains(5) = " + numeros.contains(5));
+        System.out.println("numeros.contains(50) = " + numeros.contains(50));
 
 
 
