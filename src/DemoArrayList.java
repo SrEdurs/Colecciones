@@ -56,7 +56,6 @@ public class DemoArrayList {
 
         System.out.println("----------------------------------------");
 
-
         //Ordenar
         Collections.sort(numeros);
         recorrer(numeros);
