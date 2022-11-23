@@ -20,6 +20,13 @@ public class DemoHashSet {
         //Eliminar
         numeros.remove(12);
         recorrer(numeros);
+
+        //Borrar todo
+        System.out.println("numeros.isEmpty() = " + numeros.isEmpty());
+        numeros.clear();
+        System.out.println("numeros.isEmpty() = " + numeros.isEmpty());
+
+
     }
 
     public static void recorrer(HashSet<Integer> set){
