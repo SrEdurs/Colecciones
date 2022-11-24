@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 
 public class DemoArrayList {
     public static void main(String[] args) {
@@ -64,10 +65,13 @@ public class DemoArrayList {
         System.out.println("numeros.contains(7) = " + numeros.contains(7)); //si está, true
         System.out.println("numeros.contains(57) = " + numeros.contains(57));//no está, false
 
+
         //Está vacío?
         System.out.println("numeros.isEmpty() = " + numeros.isEmpty()); //false si no está vacío
         numeros.clear(); //borramos todos los valores
         System.out.println("numeros.isEmpty() = " + numeros.isEmpty()); //true al estar vacío
+
+        recorreIterator(numeros);
 
 
 
@@ -78,6 +82,18 @@ public class DemoArrayList {
     public static void recorrer(ArrayList<Integer> array){
         for(int i = 0; i < array.size(); i++){
             System.out.println("numeros[" + i + "] = " + array.get(i));
+        }
+        System.out.println("----------------------------------------");
+    }
+
+    public static void recorreIterator(ArrayList<Integer> array){
+        System.out.println("---------------ITERATOR-----------------");
+
+        //Iterator
+        Iterator<Integer> iter = array.iterator();
+
+        while(iter.hasNext()){
+            System.out.println("iter.hasNext() = " + iter.hasNext());
         }
         System.out.println("----------------------------------------");
     }

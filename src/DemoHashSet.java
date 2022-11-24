@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class DemoHashSet {
     public static void main(String[] args) {
@@ -21,10 +23,12 @@ public class DemoHashSet {
         numeros.remove(12);
         recorrer(numeros);
 
-        //Borrar todo
+        // Borrar todos
         System.out.println("numeros.isEmpty() = " + numeros.isEmpty());
         numeros.clear();
         System.out.println("numeros.isEmpty() = " + numeros.isEmpty());
+
+        recorreIterator(numeros);
 
 
     }
@@ -36,5 +40,17 @@ public class DemoHashSet {
 
         System.out.println("-----------------------");
 
+    }
+
+    public static void recorreIterator(HashSet<Integer> array){
+        System.out.println("---------------ITERATOR-----------------");
+
+        //Iterator
+        Iterator<Integer> iter = array.iterator();
+
+        while(iter.hasNext()){
+            System.out.println("iter.hasNext() = " + iter.hasNext());
+        }
+        System.out.println("----------------------------------------");
     }
 }
